@@ -1,1 +1,1 @@
-https://github.com/Project-Nova-EcoAi/Ai-Powered-Energy-Disaggregation-
+https://miro.com/app/board/uXjVK9G3wF8=/
