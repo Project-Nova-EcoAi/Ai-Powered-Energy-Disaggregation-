@@ -1,0 +1,46 @@
+{
+  "pathology": {
+    "groupings": [
+      {
+        "level": "table",
+        "order": "alpha",
+        "orientation": "horizontal"
+      },
+      {
+        "level": "field",
+        "order": "alpha",
+        "orientation": "horizontal"
+      }
+    ],
+    "tables":[
+      {"table":"EngineReportInfo",
+        "fields":[
+          {"field":"ClassifiedDiseaseGroup",
+            "datatype":"string",
+            "closedClass":"False",
+            "diseaseProperties":
+            [
+              {"diseaseGroup":["*"],
+                "values":["disease1","disease2","disease3"]
+              }
+            ]
+          }
+        ]
+      },
+      {"table":"Table1",
+        "fields":[
+          {"field":"Field1",
+            "datatype":"string",
+            "closedClass":"True",
+            "diseaseProperties":
+            [
+              {"diseaseGroup":["*"],
+                "values":["Yes","No"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
