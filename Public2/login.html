@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<style>
+/* CSS styles here */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bk.jpg');
+    backdrop-filter: blur(2px);
+}
+.dashboard {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    background-color: #ffffff00;
+    border: 1px solid #004910;
+    box-shadow: 0 0 40px rgba(0, 4, 3, 0.788);
+}
+.left {
+    flex: 1;
+    padding: 40px;
+    background-color: #90d1bb;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left img {
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+.right {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 40px rgba(0, 4, 3, 0.788);
+}
+.title {
+    color: #7e3814;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.login {
+    background-color: #e3d6baad;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#login {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form {
+    margin-bottom: 15px;
+}
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #027a64;
+    margin-left: 30px;
+}
+.form input {
+    width: 400px; 
+    max-width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    align-self: center;
+}
+.form button {
+    width: 25%;
+    padding: 10px;
+    background-color: #387063;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 10px;
+    align-self: center;
+}
+.form button:hover {
+    background-color: #45807e;
+}
+#register {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#register a {
+    color: #387063;
+    text-decoration: none;
+    margin-left: 5px;
+}
+#register a:hover {
+    text-decoration: underline;
+}
+.form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; 
+}
+</style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="left">
+            <div class="title">Together We Can Heal The Earth</div>
+            <div class="description">
+                Access personalized energy insights, manage your usage, and explore sustainable solutions tailored just for you!
+            </div>
+            <img src="house2.png" alt="Sustainable Home">
+        </div>
+        <div class="right">
+            <div class="login">
+                <div class="title" id="login">Login</div>
+                <div class="form">
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form">
+                    <button type="button" id="loginButton">Sign In</button>
+                    <div id="register">Don't have an account yet? <a href="register.html">Register</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
