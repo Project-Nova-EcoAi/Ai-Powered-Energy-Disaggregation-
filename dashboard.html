@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chart.js with CNN Model</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 id="dashboard-title">Dashboard</h1>
+        <select name="appliances" id="appliance-select" onchange="handleSelection()">
+            <option value="">--Please choose an option--</option>
+            <option value="aggregated energy">all</option>
+            <option value="kettle">kettle</option>
+            <option value="washer dryer">washer dryer</option>
+            <option value="dish washer">dish washer</option>
+            <option value="fridge freezer">fridge freezer</option>
+            <option value="computer">computer</option>
+            <option value="television">television</option>
+        </select>
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="date-start" value="2014-07-22" min="2014-01-01" max="2014-12-31"
+            onchange="initChart()" />
+        <label for="end">End date:</label>
+        <input type="date" id="end" name="date-end" value="2014-07-22" min="2014-01-01" max="2014-12-31"
+            onchange="initChart()" />
+
+        <div class="DynamicContainer">
+            <div class="large-column-container">
+                <h1 id="title"></h1>
+                <div class="large-column">
+                    <div class="container" id="container">
+                        <div id="chartContainer"></div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div>Max: <span id="maxValue"></span></div>
+                    <div>Average: <span id="averageValue"></span></div>
+                    <div>Min: <span id="minValue"></span></div>
+                </div>
+            </div>
+            <div id="chartDiv"></div>
+        </div>
+    </div>
+    <script src="charts.js">
+
+    </script>
+</body>
+
+</html>
